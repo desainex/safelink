@@ -1,11 +1,11 @@
 <template>
   <div>
-    layout tentang
+    ERROR CUK!
     <Nuxt />
   </div>
 </template>
+
 <script>
 export default {
-  name:"Tantang"
 }
 </script>

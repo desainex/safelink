@@ -18,6 +18,9 @@ export default {
 </script>
 
 <style>
+
+*{box-sizing: border-box;}
+
 /*
   * Globals
   */
@@ -82,4 +85,6 @@ body {
     font-size: 3.5rem;
   }
 }
+
+
 </style>

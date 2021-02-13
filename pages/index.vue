@@ -1,4 +1,5 @@
 <template>
+<main class="px-3">
   <div class="container">
 
         <div class="col-md-12">
@@ -100,6 +101,7 @@
 
   <Offline/>
   </div>
+  </main>
 </template>
 
 <script>

@@ -1,13 +1,14 @@
 <template>
  <header class="mb-auto">
     <div>
-      <h3 class="float-md-start mb-0">Cover</h3>
+      <h3 class="float-md-start mb-0">  <NuxtLink to="/" class="text-link">Safelink</NuxtLink></h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-         <NuxtLink to="/" class="nav-link active" aria-current="page">Home</NuxtLink>
-         <NuxtLink to="/tentang" class="nav-link" aria-current="page">About</NuxtLink>
+         <NuxtLink to="/" class="nav-link">Home</NuxtLink>
+         <NuxtLink to="/tentang" class="nav-link">About</NuxtLink>
+         <NuxtLink to="/blog" class="nav-link">Blog</NuxtLink>
+         <NuxtLink to="/contact" class="nav-link">Contact</NuxtLink>
 
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Contact</a>
+        <!-- aria-current="page" :class="{'active': isRouteActive }" exact-active-class="active" -->
       </nav>
     </div>
   </header>
@@ -15,10 +16,15 @@
 
 <script>
 export default {
-  name: 'Header'
 }
 </script>
 
 <style>
-
+.text-link{
+  color:#fff;
+  text-decoration: none;
+}
+.text-link:hover{
+  color:antiquewhite;
+}
 </style>
