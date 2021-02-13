@@ -43,9 +43,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - https://www.kompiajaib.com/2018/03/update-premium-blogger-template-kompi.html
 
 ## To Do List
-
-
-
+- [x] Google analytics (https://google-analytics.nuxtjs.org/setup)  
+- [x] Sitemap (https://sitemap.nuxtjs.org/guide/setup)
+- [x] AMP ()
 - [ ] Auto Generate Link
 - [ ] Manual Generate Link
 - [ ] Short & Long Generate Link
