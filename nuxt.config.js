@@ -8,16 +8,15 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Safelink' }
+      { hid: 'description', name: 'description', content: 'Safelink' },
+      { name: 'theme-color', content: '#7952b3' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: "stylesheet", type: "text/css", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" }
+      { rel: "stylesheet", type: "text/css", href: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" }
     ],
     script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js' },
-      { src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js' },
-      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' }
+      { src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js' }
     ]
   },
 
@@ -27,6 +26,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+   // {src: '@/plugins/blocker/blocker.client.js',  mode: 'client'} // penambahan adblock source https://mughu.me/cara-block-adblock-plus-dan-brave-browser-dengan-javascript/
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -40,12 +40,17 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxt/http', // tambahan coba https://http.nuxtjs.org/setup
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  http: {
+    // proxyHeaders: false
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
