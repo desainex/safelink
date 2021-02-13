@@ -5,7 +5,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'safelink',
-    titleTemplate: 'safelink   | %s',
+    titleTemplate: 'Earn with links - %s',
     htmlAttrs: {
       lang: 'en',
       amp: true
@@ -14,7 +14,10 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Safelink Web Apps' },
-      { name: 'theme-color', content: '#7952b3' }
+      { name: 'theme-color', content: '#7952b3' },
+      { name: 'google-site-verification', content: '' },
+      { name: 'msvalidate.01', content: '' },
+      { name: 'yandex-verification', content: '' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

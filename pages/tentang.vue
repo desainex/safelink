@@ -1,9 +1,9 @@
 <template>
   <main class="px-3">
-    <h1>Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <h1>Earn More With Links</h1>
+    <p class="lead">Solution for affiliate marketing, publisher, content creator and advertiser create link with lead content and Ads. Awesome content link download to landing page convert your audience into close.</p>
     <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+      <a href="https://trakteer.id/irfnrdh" class="btn btn-sm btn-secondary fw-bold border-white bg-white">Support Me</a>
     </p>
   </main>
 </template>

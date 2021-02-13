@@ -1,9 +1,8 @@
 <template>
-<main class="px-3">
-  <div class="container">
-
+  <main class="px-3">
+    <div class="container">
         <div class="col-md-12">
-          <div class="btn btn-info margin-bottom-20" id="btnInfo">
+            <!-- <div class="btn btn-info margin-bottom-20" id="btnInfo">
             <button
               class="close close-copy"
               onclick='document.getElementById("btnInfo").style.display = "none"'
@@ -12,103 +11,74 @@
               <span aria-hidden="true">×</span>
             </button>
             <h4>Link has been <strong>copied to clipboard!</strong></h4>
-          </div>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <div class="panel-title text-center">
-                <h2>
-                  <i class="fa fa-shield"></i>
-                  <strong>Safe Link Converter</strong>
-                </h2>
-              </div>
-            </div>
-            <div class="panel-body">
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon"
-                    ><i class="fa fa-link"></i
-                  ></span>
-                  <input
-                    class="form-control"
-                    id="inputURL"
-                    required="required"
-                    type="url"
-                  />
-                  <span class="input-group-btn">
-                    <button
-                      class="btn btn-primary"
-                      data-target="#safeLINK"
-                      data-toggle="collapse"
-                      type="button"
-                      aria-expanded="true"
-                    >
-                      <i class="fa fa-shield"></i>
-                      <strong>Safe Link Now!</strong>
-                    </button>
-                  </span>
+          </div> -->
+            <!-- <div class="panel panel-primary">
+                <div class="panel-heading mb-5">
+                    <div class="panel-title text-center">
+                        <h1>
+                            <i class="fa fa-shield"></i>
+                            <strong>Earn Link Converter</strong>
+                        </h1>
+                        <p></p>
+                    </div>
                 </div>
-              </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-link"></i></span>
+                            <input class="form-control" id="inputURL" required="required" type="url" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" data-target="#safeLINK" data-toggle="collapse"
+                                    type="button" aria-expanded="true">
+                                    <i class="fa fa-shield"></i>
+                                    <strong>Safe Link Now!</strong>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
 
-              <div
-                class="collapse in"
-                id="safeLINK"
-                aria-expanded="true"
-                style=""
-              >
-                <div class="form-group has-success">
-                  <div class="input-group">
-                    <span class="input-group-addon"
-                      ><strong>Result:</strong>
-                      <i aria-hidden="true" class="fa fa-check"></i
-                    ></span>
-                    <input
-                      class="form-control"
-                      id="resultLink"
-                      onclick="this.focus();this.select()"
-                      readonly="readonly"
-                      required="required"
-                      type="text"
-                    />
-                  </div>
-                  <br />
-                  <button
-                    class="alert alert-dismissible alert-success btn-lg btn-block text-center"
-                  >
-                    <i aria-hidden="true" class="fa fa-thumbs-o-up"></i>
-                    <strong>Well done!</strong> you have successfully encrypted
-                    your link.
-                  </button>
-                  <div class="text-center">
-                    <button
-                      class="btn btn-sm btn-success"
-                      data-clipboard-target="resultLink"
-                      data-target="#safeLINK"
-                      data-toggle="collapse"
-                      id="btnCopy"
-                      type="submit"
-                      aria-expanded="true"
-                    >
-                      <i aria-hidden="true" class="fa fa-files-o"></i>
-                      <strong>Copy your link to clipboard!</strong>
-                    </button>
-                  </div>
+                    <div class="collapse in" id="safeLINK" aria-expanded="true" style="">
+                        <div class="form-group has-success">
+                            <div class="input-group">
+                                <span class="input-group-addon"><strong>Result:</strong>
+                                    <i aria-hidden="true" class="fa fa-check"></i></span>
+                                <input class="form-control" id="resultLink" onclick="this.focus();this.select()"
+                                    readonly="readonly" required="required" type="text" />
+                            </div>
+                            <br />
+                            <button class="alert alert-dismissible alert-success btn-lg btn-block text-center">
+                                <i aria-hidden="true" class="fa fa-thumbs-o-up"></i>
+                                <strong>Well done!</strong> you have successfully encrypted
+                                your link.
+                            </button>
+                            <div class="text-center">
+                                <button class="btn btn-sm btn-success" data-clipboard-target="resultLink"
+                                    data-target="#safeLINK" data-toggle="collapse" id="btnCopy" type="submit"
+                                    aria-expanded="true">
+                                    <i aria-hidden="true" class="fa fa-files-o"></i>
+                                    <strong>Copy your link to clipboard!</strong>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
+            </div> -->
+
+            <Coba/>
+
+
+
         </div>
 
-
-  <Offline/>
-  </div>
-  </main>
+        <Offline />
+    </div>
+</main>
 </template>
 
 <script>
-import Offline from '../components/Offline.vue';
+import Offline from "../components/Offline.vue";
 export default {
   components: { Offline },
-
 };
 
 // var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(input){var output="";var chr1,chr2,chr3,enc1,enc2,enc3,enc4;var i=0;input=Base64._utf8_encode(input);while(i<input.length){chr1=input.charCodeAt(i++);chr2=input.charCodeAt(i++);chr3=input.charCodeAt(i++);enc1=chr1>>2;enc2=((chr1&3)<<4)|(chr2>>4);enc3=((chr2&15)<<2)|(chr3>>6);enc4=chr3&63;if(isNaN(chr2)){enc3=enc4=64;}else if(isNaN(chr3)){enc4=64;}
@@ -138,7 +108,6 @@ export default {
 // {a_to_vk.innerHTML+=a_to_va;}}
 // function a_to_fa()
 // {var a_to_vf=new Array();protected_links=protected_links.replace(" ","");a_to_vf=protected_links.split(",");return a_to_vf;}
-
 </script>
 
 <style>
